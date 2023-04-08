@@ -12,8 +12,6 @@ dockerpath="saikarthik550/project"
 kubectl run project \
 	    --image=$dockerpath \
 	        --port=80 --labels app=project
-kubectl wait pod/project --for=condition=Ready --timeout=-1s
-
 
 # Step 3:
 # List kubernetes pods
